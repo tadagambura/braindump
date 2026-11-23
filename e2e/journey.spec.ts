@@ -39,7 +39,10 @@ test('free has 5 pages, then the paywall; the whiteboard is Premium (test mode)'
   }
   await page.getByTestId('page-add').click();
   await expect(page.getByTestId('paywall')).toBeVisible();
+  await expect(page.getByTestId('paywall-buy')).toContainText('£34.99 a year');
   await page.getByTestId('paywall-buy').click();
+  await expect(page.getByTestId('paywall-success')).toBeVisible();
+  await page.getByTestId('paywall-done').click();
   await page.getByTestId('board-open').click();
   await expect(page.getByTestId('board')).toBeVisible();
   const box = (await page.getByTestId('board-canvas').boundingBox())!;
