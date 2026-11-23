@@ -49,3 +49,19 @@ test('free has 5 pages, then the paywall; the whiteboard is Premium (test mode)'
   await page.mouse.up();
   await expect(page.getByTestId('board-canvas')).toHaveAttribute('aria-label', 'Whiteboard with 1 strokes');
 });
+
+test('learning cards: 20 free, sourced, the 21st is Premium', async ({ page }) => {
+  await page.goto('/');
+  await finishIntro(page);
+  await page.getByRole('tab', { name: /Learn/ }).click();
+  await expect(page.getByTestId("cards-progress")).toContainText("0 of 30 cards read · 20 free");
+  await page.getByTestId("card-c01").click();
+  await expect(page.getByTestId("card-sheet")).toContainText("Source:");
+  const quiz = page.getByTestId("card-quiz-0");
+  if (await quiz.count()) await quiz.click();
+  else await page.getByTestId("card-done").click();
+  await page.getByTestId("sheet-close").click();
+  await expect(page.getByTestId("cards-progress")).toContainText("1 of 30");
+  await page.getByTestId("card-c21").click();
+  await expect(page.getByTestId("paywall")).toBeVisible();
+});
