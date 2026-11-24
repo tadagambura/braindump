@@ -1,3 +1,4 @@
+import { AdBanner } from '@/kit/ads';
 import { useFeedback } from '@/kit/feedback';
 import { Button, Card, EmptyState, H1, Muted, Row, Screen, Section, Strong } from '@/kit/ui';
 import { useDump } from '@/state/dump';
@@ -8,7 +9,7 @@ export default function Later() {
   const later = d.thoughts.filter((t) => t.bucket === 'later');
   const never = d.thoughts.filter((t) => t.bucket === 'never');
   return (
-    <Screen testID="later">
+    <Screen testID="later" banner={<AdBanner placement="later_banner" />}>
       <H1>Later</H1>
       {later.length === 0 ? <EmptyState icon="time-outline" title="Nothing waiting" body="Thoughts you sort into Later live here until you're ready." /> : null}
       {later.map((t) => (
