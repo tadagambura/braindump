@@ -120,7 +120,7 @@
       "name": "Mind Maze",
       "emoji": "🌀",
       "mechanic": "sequence",
-      "tier": "arcade_subscription",
+      "tier": "arcade",
       "how": "Watch the path light up, then trace it back from memory.",
       "teaches": "Train your focus a little every day.",
       "seconds": 45,
