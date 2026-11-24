@@ -1,0 +1,34 @@
+{
+ "thought-catcher": {
+  "catcher": "📓",
+  "good": [
+   {
+    "e": "💡",
+    "label": "idea"
+   },
+   {
+    "e": "✅",
+    "label": "task"
+   },
+   {
+    "e": "📅",
+    "label": "appointment"
+   }
+  ],
+  "bad": [
+   {
+    "e": "🌀",
+    "label": "worry spiral"
+   },
+   {
+    "e": "📱",
+    "label": "doomscroll"
+   },
+   {
+    "e": "🐇",
+    "label": "rabbit hole"
+   }
+  ],
+  "tip": "When a worry loops, write it down and give it a 'think about it at 6pm' slot."
+ }
+}

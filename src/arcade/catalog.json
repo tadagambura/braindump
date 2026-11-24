@@ -1,0 +1,134 @@
+{
+  "app": "braindump",
+  "title": "Mind Management Arcade",
+  "emoji": "🧠",
+  "currency": {
+    "name": "Focus points",
+    "one": "focus point",
+    "emoji": "🧠"
+  },
+  "unlocks": "desk decorations, productivity themes and focus boosters",
+  "games": [
+    {
+      "id": "thought-catcher",
+      "name": "Thought Catcher",
+      "emoji": "💭",
+      "mechanic": "catch",
+      "tier": "free",
+      "how": "Catch the useful thoughts in your notebook. Dodge the spirals.",
+      "teaches": "Write it down to get it out of your head. Not every thought needs acting on.",
+      "seconds": 45,
+      "flagship": true,
+      "pack": {
+        "file": "braindump/thought-catcher.aaf0b692a1.json",
+        "sha256": "aaf0b692a1be86d6bc40824f85f6384d8968231f33b6a5fece3bce9fcdb6bffa",
+        "bytes": 316
+      }
+    },
+    {
+      "id": "brain-sort",
+      "name": "Brain Sort",
+      "emoji": "🗂️",
+      "mechanic": "sort",
+      "tier": "free",
+      "how": "Today, later or never? Sort each thought fast.",
+      "teaches": "Most things can wait, and some can go entirely.",
+      "seconds": 45,
+      "pack": {
+        "file": "braindump/brain-sort.66db863695.json",
+        "sha256": "66db86369581a786a617a07dc4adb07bdc3c9469df4fc5fd9861c7e00b360c99",
+        "bytes": 754
+      }
+    },
+    {
+      "id": "priority-puzzle",
+      "name": "Priority Puzzle",
+      "emoji": "🎯",
+      "mechanic": "sort",
+      "tier": "free",
+      "how": "Urgent, important or neither? Sort the made-up tasks.",
+      "teaches": "Do the important things before they become urgent.",
+      "seconds": 45,
+      "pack": {
+        "file": "braindump/priority-puzzle.2afd274981.json",
+        "sha256": "2afd27498161c122275bfaff32e1e29853a3094b678f1edc4d9127ef363eb166",
+        "bytes": 719
+      }
+    },
+    {
+      "id": "decision-maker",
+      "name": "Decision Maker",
+      "emoji": "🤹",
+      "mechanic": "quiz",
+      "tier": "arcade",
+      "how": "Several things at once. What deserves your attention first?",
+      "teaches": "When everything feels urgent, pick the thing with a real deadline or real harm.",
+      "seconds": 45,
+      "pack": {
+        "file": "braindump/decision-maker.48df775bd0.json",
+        "sha256": "48df775bd029c65173c8b36a6c1e473efa7c6f9e28e645f167250dea39fd17ba",
+        "bytes": 913
+      }
+    },
+    {
+      "id": "to-do-dash",
+      "name": "To-Do Dash",
+      "emoji": "✅",
+      "mechanic": "order",
+      "tier": "arcade",
+      "how": "Put the steps in a sensible order.",
+      "teaches": "Breaking tasks into steps makes them startable.",
+      "seconds": 45,
+      "pack": {
+        "file": "braindump/to-do-dash.4fdfad80f0.json",
+        "sha256": "4fdfad80f03338a29fa46e78721d6fb1af10149c5ea1975124c52f47c230b890",
+        "bytes": 400
+      }
+    },
+    {
+      "id": "clutter-crusher",
+      "name": "Clutter Crusher",
+      "emoji": "🧹",
+      "mechanic": "sort",
+      "tier": "arcade",
+      "how": "Keep, donate, recycle or bin? Clear the messy virtual desk.",
+      "teaches": "Every item needs a home or an exit.",
+      "seconds": 45,
+      "pack": {
+        "file": "braindump/clutter-crusher.de6aaccc5e.json",
+        "sha256": "de6aaccc5ecd347fc5b6585e86e5a8fecc5b575e4ad3002aaabe7164287e3d53",
+        "bytes": 670
+      }
+    },
+    {
+      "id": "day-packer",
+      "name": "Day Packer",
+      "emoji": "🧩",
+      "mechanic": "quiz",
+      "tier": "arcade",
+      "how": "Fit the tasks into the time you've actually got.",
+      "teaches": "Realistic plans beat heroic ones.",
+      "seconds": 45,
+      "pack": {
+        "file": "braindump/day-packer.209effe126.json",
+        "sha256": "209effe126ecc6d77083e5d8fece7ad2912c8c3d499b46d5850c3e2a01950ee8",
+        "bytes": 928
+      }
+    },
+    {
+      "id": "mind-maze",
+      "name": "Mind Maze",
+      "emoji": "🌀",
+      "mechanic": "sequence",
+      "tier": "arcade_subscription",
+      "how": "Watch the path light up, then trace it back from memory.",
+      "teaches": "Train your focus a little every day.",
+      "seconds": 45,
+      "pack": {
+        "file": "braindump/mind-maze.a6e5c980ee.json",
+        "sha256": "a6e5c980ee53e3c31e8194bdef136c82e1a40b174dad42182b6d46d56d4165e5",
+        "bytes": 140
+      }
+    }
+  ]
+}

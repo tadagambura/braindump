@@ -9,6 +9,8 @@ import { usePremium } from '@/kit/premium';
 import { Button, Card, Chip, Field, H1, Muted, Note, Row, Screen, Section, Sheet, Stack, Strong } from '@/kit/ui';
 import { counts, FREE_PAGES, pageError, type Bucket } from '@/domain/dump';
 import { useDump } from '@/state/dump';
+import '@/arcade';
+import { ArcadeEntry } from '@/kit/arcade/screens';
 
 const SORTS: { b: Bucket; label: string }[] = [
   { b: 'today', label: 'Today' },
@@ -102,6 +104,7 @@ export default function Dump() {
         </Stack>
       </Sheet>
       <PaywallSheet visible={!!paywall} onClose={() => setPaywall(null)} reason={paywall ?? undefined} />
+      <ArcadeEntry />
     </Screen>
   );
 }
